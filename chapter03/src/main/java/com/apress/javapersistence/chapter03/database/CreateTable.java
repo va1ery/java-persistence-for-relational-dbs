@@ -42,7 +42,7 @@ public class CreateTable {
         Connection connection = null;
         Statement statement = null;
         try {
-            Class.forName( "org.gjt.mm.mysql.Driver" ).newInstance();
+            Class.forName( "com.mysql.cj.jdbc.Driver" ).newInstance();
             String url = "jdbc:mysql://localhost/hrapp";
             connection = DriverManager.getConnection( url, username, password );
 

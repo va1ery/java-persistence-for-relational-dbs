@@ -42,7 +42,7 @@ public class CreateDatabase {
         Connection connection = null;
         Statement statement = null;
         try {
-            Class.forName( "org.gjt.mm.mysql.Driver" ).newInstance();
+            Class.forName( "com.mysql.cj.jdbc.Driver" ).newInstance();
             String url = "jdbc:mysql://localhost/mysql";
             connection = DriverManager.getConnection( url, username, password );
 
